@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'fonts';
+
+.home {
+	background-color: $grey;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/interior1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	padding: 0 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-family: $accent-font;
+			color: $light;
+			font-size: 4rem;
+			letter-spacing: 7px;
+			font-weight: 200;
+			text-align: center;
+		}
+
+		p {
+			color: $light;
+			font-size: 1.7rem;
+			letter-spacing: 7px;
+			font-weight: 200;
+			text-align: center;
+		}
+	}
+}
