@@ -37,12 +37,13 @@
   font-size: 1.5rem;
   margin-left: 24px;
   cursor: pointer;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
 .nav-container .mobile-icon {
   font-size: 1.5rem;
   cursor: pointer;
+  color: #303131;
 }
 
 @media (min-width: 768px) {
@@ -89,6 +90,6 @@
   margin: 0;
   padding: 0;
   color: #303131;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

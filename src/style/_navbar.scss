@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'media-queries';
+@import 'fonts';
 
 $navbar-height: 80px;
 
@@ -27,12 +28,13 @@ $navbar-height: 80px;
 			font-size: 1.5rem;
 			margin-left: 24px;
 			cursor: pointer;
-			font-family: 'Cinzel', serif;
+			font-family: $accent-font;
 		}
 
 		.mobile-icon {
 			font-size: 1.5rem;
 			cursor: pointer;
+			color: $dark;
 
 			@include desktop {
 				visibility: hidden;
