@@ -13,7 +13,7 @@ const Home = () => {
 
 	return (
 		<div>
-			<Sidebar isOpen={isOpen} toggle={toggle} />
+			{/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
 			<Navbar toggle={toggle} />
 			<HeroSection />
 			<Footer />

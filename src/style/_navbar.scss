@@ -1,0 +1,63 @@
+@import 'colors';
+@import 'media-queries';
+
+$navbar-height: 80px;
+
+.nav {
+	background: $light;
+	height: $navbar-height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+	&-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: $navbar-height;
+		max-width: 1100px;
+		padding: 0 24px;
+
+		.logo {
+			font-size: 1.5rem;
+			margin-left: 24px;
+			cursor: pointer;
+			font-family: 'Cinzel', serif;
+		}
+
+		.mobile-icon {
+			font-size: 1.5rem;
+			cursor: pointer;
+
+			@include desktop {
+				visibility: hidden;
+			}
+		}
+	}
+
+	&-menu {
+		display: none;
+
+		@include desktop {
+			display: flex;
+			align-items: center;
+			list-style: none;
+		}
+
+		.nav-item {
+			height: $navbar-height;
+			.nav-link {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				cursor: pointer;
+				padding: 1rem;
+			}
+		}
+	}
+}
