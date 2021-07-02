@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
 	return <div>Sidebar</div>;
 };
 
