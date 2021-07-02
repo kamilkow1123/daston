@@ -16,8 +16,8 @@
   top: 0;
   margin-top: -80px;
   z-index: 10;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .nav-container {
@@ -105,6 +105,86 @@
 
 .nav-menu .nav-item .nav-link:hover {
   background: rgba(139, 152, 167, 0.25);
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.sidebar .close-icon {
+  color: #303131;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.sidebar .sidebar-wrapper .sidebar-link {
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-transition-enter {
+  position: absolute;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+}
+
+.sidebar-transition-enter-active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar-transition-exit {
+  position: absolute;
+}
+
+.sidebar-transition-exit-active {
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .home {
