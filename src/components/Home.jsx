@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
+import Portfolio from './Portfolio';
 import Footer from './Footer';
 
 const Home = () => {
@@ -16,7 +17,8 @@ const Home = () => {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<HeroSection />
-			<Footer />
+			<Portfolio />
+			{/* <Footer /> */}
 		</div>
 	);
 };

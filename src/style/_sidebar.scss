@@ -45,7 +45,6 @@
 }
 
 .sidebar-transition-enter {
-	position: absolute;
 	transform: translateY(-110%);
 }
 .sidebar-transition-enter-active {
@@ -53,7 +52,7 @@
 	transition: all 0.5s ease;
 }
 .sidebar-transition-exit {
-	position: absolute;
+	transform: translateY(0%);
 }
 .sidebar-transition-exit-active {
 	transform: translateY(-110%);
