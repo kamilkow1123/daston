@@ -18,7 +18,7 @@ const Home = () => {
 			<Navbar toggle={toggle} />
 			<HeroSection />
 			<Portfolio />
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 };

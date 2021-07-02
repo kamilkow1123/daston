@@ -2,8 +2,10 @@
 @import 'media-queries';
 @import 'fonts';
 
+$image-mask: rgba(0, 0, 0, 0.3);
+
 .portfolio {
-	height: 100vh;
+	height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
 	// justify-content: flex-start;
@@ -14,7 +16,7 @@
 		color: $dark;
 		font-family: $accent-font;
 		font-weight: 200;
-		margin: 2rem;
+		margin: 1.5rem;
 	}
 
 	&-wrapper {
@@ -24,16 +26,16 @@
 		align-items: center;
 		padding: 0 20px;
 		width: 100%;
+		height: 100%;
 
 		@include desktop {
 			flex-direction: row;
-			height: 100%;
 		}
 	}
 
 	&-card {
 		background-color: $grey;
-		background-image: url(../img/building6.2.jpg);
+		background-image: linear-gradient($image-mask, $image-mask), url(../img/building6.2.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -42,20 +44,31 @@
 		justify-content: center;
 		align-items: center;
 		padding: 30px;
-		height: 300px;
+		height: 100%;
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+
+		@include tablet {
+			max-width: 80%;
+		}
 
 		@include desktop {
-			margin: 0 20px;
+			margin: 0 10px;
 			height: 100%;
+			justify-content: flex-start;
 		}
 
 		h2 {
 			color: $light;
 			font-family: $accent-font;
 			font-weight: 200;
-			font-size: 2.5rem;
+			margin-bottom: 1rem;
+			font-size: 2rem;
+
+			@include desktop {
+				font-size: 2.5rem;
+				margin: 7rem 0 1rem 0;
+			}
 		}
 
 		&-button {
@@ -67,10 +80,10 @@
 	}
 
 	&-card:first-child {
-		background-image: url(../img/projection1.2.jpg);
+		background-image: linear-gradient($image-mask, $image-mask), url(../img/projection1.2.jpg);
 	}
 
 	&-card:last-child {
-		background-image: url(../img/interior2.2.jpg);
+		background-image: linear-gradient($image-mask, $image-mask), url(../img/interior2.2.jpg);
 	}
 }

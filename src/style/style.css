@@ -241,7 +241,7 @@
 }
 
 .portfolio {
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +259,7 @@
   color: #303131;
   font-family: "Cinzel", serif;
   font-weight: 200;
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .portfolio-wrapper {
@@ -278,21 +278,22 @@
           align-items: center;
   padding: 0 20px;
   width: 100%;
+  height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .portfolio-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 100%;
   }
 }
 
 .portfolio-card {
   background-color: #8b98a7;
-  background-image: url(../img/building6.2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/building6.2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/building6.2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -310,15 +311,24 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
-  height: 300px;
+  height: 100%;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
   .portfolio-card {
-    margin: 0 20px;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolio-card {
+    margin: 0 10px;
     height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -326,7 +336,15 @@
   color: #fff;
   font-family: "Cinzel", serif;
   font-weight: 200;
-  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .portfolio-card h2 {
+    font-size: 2.5rem;
+    margin: 7rem 0 1rem 0;
+  }
 }
 
 .portfolio-card-button {
@@ -337,11 +355,13 @@
 }
 
 .portfolio-card:first-child {
-  background-image: url(../img/projection1.2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/projection1.2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/projection1.2.jpg);
 }
 
 .portfolio-card:last-child {
-  background-image: url(../img/interior2.2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/interior2.2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/interior2.2.jpg);
 }
 
 * {
