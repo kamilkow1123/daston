@@ -11,9 +11,39 @@ const Sidebar = ({ isOpen, toggle }) => {
 					<FaTimes />
 				</div>
 				<ul className="sidebar-wrapper">
-					<LinkS className="sidebar-link">Portfolio</LinkS>
-					<LinkS className="sidebar-link">Firma</LinkS>
-					<LinkS className="sidebar-link">Kontakt</LinkS>
+					<LinkS
+						to="portfolio"
+						smooth={true}
+						duration={500}
+						spy={true}
+						exact="true"
+						offset={-80}
+						className="sidebar-link"
+					>
+						Portfolio
+					</LinkS>
+					<LinkS
+						to="info"
+						smooth={true}
+						duration={500}
+						spy={true}
+						exact="true"
+						offset={-80}
+						className="sidebar-link"
+					>
+						Firma
+					</LinkS>
+					<LinkS
+						to="contact"
+						smooth={true}
+						duration={500}
+						spy={true}
+						exact="true"
+						offset={-80}
+						className="sidebar-link"
+					>
+						Kontakt
+					</LinkS>
 				</ul>
 			</aside>
 		</CSSTransition>

@@ -42,6 +42,7 @@
   cursor: pointer;
   font-family: "Cinzel", serif;
   color: #fff;
+  text-decoration: none;
 }
 
 .nav-container .mobile-icon {
@@ -641,10 +642,6 @@
 }
 
 .home-container {
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
-  scroll-padding: 80px;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

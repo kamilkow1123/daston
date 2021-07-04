@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { Link as LinkS } from 'react-scroll';
+import { Link as LinkS, animateScroll as scroll } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
 
 const Navbar = ({ toggle }) => {
 	const [ solidNav, setSolidNav ] = useState(false);
@@ -18,25 +19,61 @@ const Navbar = ({ toggle }) => {
 		document.getElementById('home-container').addEventListener('scroll', changeNav);
 	});
 
+	const toggleHome = () => {
+		scroll.scrollToTop();
+	};
+
 	return (
 		<nav className="nav" style={{ background: `${solidNav ? '#fff' : 'transparent'}` }}>
 			<div className="nav-container">
-				<div className="logo" style={{ color: `${solidNav ? '#303131' : '#fff'}` }}>
+				<LinkR
+					to="/"
+					className="logo"
+					onClick={toggleHome}
+					style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+				>
 					DASTON
-				</div>
+				</LinkR>
 				<ul className="nav-menu">
 					<li className="nav-item">
-						<LinkS className="nav-link" style={{ color: `${solidNav ? '#303131' : '#fff'}` }}>
+						<LinkS
+							to="portfolio"
+							smooth={true}
+							duration={500}
+							spy={true}
+							exact="true"
+							offset={-80}
+							className="nav-link"
+							style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+						>
 							Portfolio
 						</LinkS>
 					</li>
 					<li className="nav-item">
-						<LinkS className="nav-link" style={{ color: `${solidNav ? '#303131' : '#fff'}` }}>
+						<LinkS
+							to="info"
+							smooth={true}
+							duration={500}
+							spy={true}
+							exact="true"
+							offset={-80}
+							className="nav-link"
+							style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+						>
 							Firma
 						</LinkS>
 					</li>
 					<li className="nav-item">
-						<LinkS className="nav-link" style={{ color: `${solidNav ? '#303131' : '#fff'}` }}>
+						<LinkS
+							to="contact"
+							smooth={true}
+							duration={500}
+							spy={true}
+							exact="true"
+							offset={-80}
+							className="nav-link"
+							style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+						>
 							Kontakt
 						</LinkS>
 					</li>

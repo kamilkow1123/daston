@@ -2,7 +2,7 @@ import React from 'react';
 
 const InfoSection = () => {
 	return (
-		<div className="info-section">
+		<div className="info-section" id="info">
 			<div className="info-section-image">
 				<div className="info-section-content">
 					<h1>Firma</h1>
