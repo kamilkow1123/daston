@@ -5,12 +5,13 @@
 $image-mask: rgba(0, 0, 0, 0.3);
 
 .portfolio {
-	height: calc(100vh - 80px);
+	height: calc(100vh - 80px); //80px - height of the navbar
 	display: flex;
 	flex-direction: column;
 	// justify-content: flex-start;
 	align-items: center;
 	scroll-snap-align: start;
+	// scroll-padding: 80px;
 
 	h1 {
 		font-size: 2.5rem;
@@ -36,7 +37,7 @@ $image-mask: rgba(0, 0, 0, 0.3);
 
 	&-card {
 		background-color: $grey;
-		background-image: linear-gradient($image-mask, $image-mask), url(../img/building6.2.jpg);
+		background-image: linear-gradient($image-mask, $image-mask), url(../img/building6.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -77,14 +78,20 @@ $image-mask: rgba(0, 0, 0, 0.3);
 			border: 1px solid $light;
 			padding: 0.5rem 1rem;
 			cursor: pointer;
+			transition: all 0.4s ease-in-out;
+
+			&:hover {
+				color: $dark;
+				background-color: $light;
+			}
 		}
 	}
 
 	&-card:first-child {
-		background-image: linear-gradient($image-mask, $image-mask), url(../img/projection1.2.jpg);
+		background-image: linear-gradient($image-mask, $image-mask), url(../img/projection1.jpg);
 	}
 
 	&-card:last-child {
-		background-image: linear-gradient($image-mask, $image-mask), url(../img/interior2.2.jpg);
+		background-image: linear-gradient($image-mask, $image-mask), url(../img/interior2.jpg);
 	}
 }

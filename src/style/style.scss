@@ -2,6 +2,7 @@
 @import 'sidebar';
 @import 'hero';
 @import 'portfolio';
+@import 'info-section';
 
 * {
 	box-sizing: border-box;
@@ -14,4 +15,5 @@
 	scroll-snap-type: y proximity;
 	overflow-y: scroll;
 	height: 100vh;
+	scroll-padding: 80px;
 }
