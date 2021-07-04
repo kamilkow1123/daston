@@ -2,13 +2,14 @@
 @import 'media-queries';
 @import 'fonts';
 
+$navbar-height: 80px;
+
 .info-section {
-	height: calc(100vh - 80px); //80px - height of the navbar
+	height: calc(100vh - #{$navbar-height});
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	scroll-snap-align: start;
-	// scroll-padding: 80px;
 	margin-top: 1rem;
 
 	@include desktop {

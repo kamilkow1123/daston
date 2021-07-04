@@ -3,15 +3,14 @@
 @import 'fonts';
 
 $image-mask: rgba(0, 0, 0, 0.3);
+$navbar-height: 80px;
 
 .portfolio {
-	height: calc(100vh - 80px); //80px - height of the navbar
+	height: calc(100vh - #{$navbar-height}); //80px - height of the navbar
 	display: flex;
 	flex-direction: column;
-	// justify-content: flex-start;
 	align-items: center;
 	scroll-snap-align: start;
-	// scroll-padding: 80px;
 
 	h1 {
 		font-size: 2.5rem;
@@ -51,7 +50,7 @@ $image-mask: rgba(0, 0, 0, 0.3);
 		margin-bottom: 10px;
 
 		@include tablet {
-			max-width: 80%;
+			// max-width: 80%;
 		}
 
 		@include desktop {

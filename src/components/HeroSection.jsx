@@ -6,6 +6,7 @@ const HeroSection = () => {
 			<div className="home-content">
 				<h1>DASTON</h1>
 				<p>REALISTYCZNE WIZUALIZACJE</p>
+				<div className="home-content-button">zobacz nasze realizacje</div>
 			</div>
 		</div>
 	);

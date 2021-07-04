@@ -241,6 +241,21 @@
   text-align: center;
 }
 
+.home-content-button {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 2rem 0;
+}
+
+.home-content-button:hover {
+  color: #303131;
+  background-color: #fff;
+}
+
 .portfolio {
   height: calc(100vh - 80px);
   display: -webkit-box;
@@ -316,12 +331,6 @@
   height: 100%;
   width: 100%;
   margin-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-  .portfolio-card {
-    max-width: 80%;
-  }
 }
 
 @media (min-width: 1000px) {
