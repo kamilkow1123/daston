@@ -3,8 +3,9 @@ import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import Portfolio from './Portfolio';
-import Footer from './Footer';
 import InfoSection from './InfoSection';
+import ContactSection from './ContactSection';
+import Footer from './Footer';
 
 const Home = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
 			<HeroSection />
 			<Portfolio />
 			<InfoSection />
+			<ContactSection />
 			<Footer />
 		</div>
 	);

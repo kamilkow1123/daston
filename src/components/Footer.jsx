@@ -14,6 +14,7 @@ const Footer = () => {
 						className="footer-social-link"
 						href="//www.facebook.com/dawid.kowalewski.12/"
 						target="_blank"
+						rel="noreferrer"
 						aria-label="Facebook"
 					>
 						<FaFacebook />
@@ -22,6 +23,7 @@ const Footer = () => {
 						className="footer-social-link"
 						href="//www.instagram.com/daston_render/"
 						target="_blank"
+						rel="noreferrer"
 						aria-label="Instagram"
 					>
 						<FaInstagram />
@@ -30,6 +32,7 @@ const Footer = () => {
 						className="footer-social-link"
 						href="//www.linkedin.com/in/dawid-kowalewski-109073202/"
 						target="_blank"
+						rel="noreferrer"
 						aria-label="Linkedin"
 					>
 						<FaLinkedin />
