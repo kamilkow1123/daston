@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
+import InfoSection from './InfoSection';
 
 const Home = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
 			<Navbar toggle={toggle} />
 			<HeroSection />
 			<Portfolio />
+			<InfoSection />
 			<Footer />
 		</div>
 	);
