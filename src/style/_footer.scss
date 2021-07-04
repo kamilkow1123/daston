@@ -1,0 +1,51 @@
+@import 'colors';
+@import 'media-queries';
+@import 'fonts';
+
+.footer {
+	padding: 2rem 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	&-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 1200px;
+		width: 100%;
+
+		@include tablet {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&-logo {
+		cursor: pointer;
+		font-family: $accent-font;
+		font-size: 1.5rem;
+		padding: 0.5rem;
+		color: $dark;
+	}
+
+	&-rights {
+		color: $dark;
+		text-align: center;
+		padding: 0 0.5rem;
+	}
+
+	&-social {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 150px;
+		padding: 0.5rem;
+
+		&-link {
+			font-size: 1.5rem;
+			color: $dark;
+		}
+	}
+}
