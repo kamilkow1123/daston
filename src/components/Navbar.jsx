@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
 							to="portfolio"
 							smooth={true}
 							duration={500}
-							spy={true}
+							// spy={true}
 							exact="true"
 							offset={-80}
 							className="nav-link"
@@ -55,7 +55,7 @@ const Navbar = ({ toggle }) => {
 							to="info"
 							smooth={true}
 							duration={500}
-							spy={true}
+							// spy={true}
 							exact="true"
 							offset={-80}
 							className="nav-link"
@@ -69,7 +69,7 @@ const Navbar = ({ toggle }) => {
 							to="contact"
 							smooth={true}
 							duration={500}
-							spy={true}
+							// spy={true}
 							exact="true"
 							offset={-80}
 							className="nav-link"
