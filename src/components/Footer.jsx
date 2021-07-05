@@ -1,11 +1,19 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link as LinkR } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
+	const toggleHome = () => {
+		scroll.scrollToTop();
+	};
+
 	return (
 		<div className="footer">
 			<div className="footer-container">
-				<div className="footer-logo">DASTON</div>
+				<LinkR to="/" className="footer-logo" onClick={toggleHome}>
+					DASTON
+				</LinkR>
 				<div className="footer-rights">
 					All rights reserved &copy; {new Date().getFullYear()} By Kamil Kowalewski
 				</div>

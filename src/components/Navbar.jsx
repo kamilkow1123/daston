@@ -7,7 +7,8 @@ const Navbar = ({ toggle }) => {
 	const [ solidNav, setSolidNav ] = useState(false);
 
 	const changeNav = () => {
-		if (document.getElementById('home-container').scrollTop >= 80) {
+		// document.getElementById('home-container')
+		if (window.scrollY >= 80) {
 			//80px - navbar's height
 			setSolidNav(true);
 		} else {
@@ -16,7 +17,7 @@ const Navbar = ({ toggle }) => {
 	};
 
 	useEffect(() => {
-		document.getElementById('home-container').addEventListener('scroll', changeNav);
+		window.addEventListener('scroll', changeNav);
 	});
 
 	const toggleHome = () => {

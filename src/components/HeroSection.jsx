@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as LinkS } from 'react-scroll';
 
 const HeroSection = () => {
 	return (
@@ -6,7 +7,17 @@ const HeroSection = () => {
 			<div className="home-content">
 				<h1>DASTON</h1>
 				<p>REALISTYCZNE WIZUALIZACJE</p>
-				<div className="home-content-button">zobacz nasze realizacje</div>
+				<LinkS
+					className="home-content-button"
+					to="portfolio"
+					smooth={true}
+					duration={500}
+					spy={true}
+					exact="true"
+					offset={-80}
+				>
+					zobacz nasze realizacje
+				</LinkS>
 			</div>
 		</div>
 	);

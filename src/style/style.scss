@@ -13,9 +13,16 @@
 	font-family: $primary-font;
 }
 
-.home-container {
-	// scroll-snap-type: y proximity;
-	// overflow-y: scroll;
-	height: 100%;
-	// scroll-padding: 80px;
+body {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	scroll-padding: 80px;
+	height: 100vh;
 }
+
+// .home-container {
+// 	// scroll-snap-type: y mandatory;
+// 	// overflow-y: scroll;
+// 	// height: 100vh;
+// 	// scroll-padding: 80px;
+// }

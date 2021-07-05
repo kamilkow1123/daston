@@ -568,6 +568,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  scroll-snap-align: start;
 }
 
 .footer-container {
@@ -606,6 +607,7 @@
   font-size: 1.5rem;
   padding: 0.5rem;
   color: #303131;
+  text-decoration: none;
 }
 
 .footer-rights {
@@ -641,7 +643,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.home-container {
-  height: 100%;
+body {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-padding: 80px;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
