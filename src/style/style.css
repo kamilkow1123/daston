@@ -763,6 +763,7 @@
 .contact-section-form-group textarea {
   border: none;
   padding: 10px;
+  padding-left: 0;
   width: 100%;
   background: transparent;
   color: #fff;
@@ -772,9 +773,8 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.contact-section-form-group input:focus, .contact-section-form-group input:focus-visible,
-.contact-section-form-group textarea:focus,
-.contact-section-form-group textarea:focus-visible {
+.contact-section-form-group input:focus-within,
+.contact-section-form-group textarea:focus-within {
   border: none;
   outline: none;
   border-bottom: 2px solid #fff;
@@ -788,8 +788,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #fff !important;
-  transition: all 0s 50000s;
-  -webkit-transition: all 0s 50000s;
+  transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
+  -webkit-transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
   font-family: "Open Sans", sans-serif;
   -webkit-font-family: "Open Sans", sans-serif;
 }

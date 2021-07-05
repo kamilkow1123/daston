@@ -6,6 +6,7 @@ const ContactForm = ({ sendMessage }) => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		sendMessage(e.target);
+		setDetails({ firstname: '', lastname: '', email: '', phone: '', message: '' });
 	};
 
 	return (

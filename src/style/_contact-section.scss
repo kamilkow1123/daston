@@ -184,6 +184,7 @@ $image-mask: rgba(0, 0, 0, 0.3);
 			textarea {
 				border: none;
 				padding: 10px;
+				padding-left: 0;
 				width: 100%;
 				// background: rgba(255, 255, 255, 0.2);
 				background: transparent;
@@ -192,8 +193,7 @@ $image-mask: rgba(0, 0, 0, 0.3);
 				border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 				font-family: $primary-font;
 
-				&:focus,
-				&:focus-visible {
+				&:focus-within {
 					border: none;
 					outline: none;
 					border-bottom: 2px solid $light;
@@ -206,8 +206,8 @@ $image-mask: rgba(0, 0, 0, 0.3);
 					background-clip: text;
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: $light !important;
-					transition: all 0s 50000s;
-					-webkit-transition: all 0s 50000s;
+					transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
+					-webkit-transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
 					font-family: $primary-font;
 					-webkit-font-family: $primary-font;
 				}
