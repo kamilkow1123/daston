@@ -1,8 +1,27 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import { FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import ContactForm from './ContactForm';
 
 const ContactSection = () => {
+	const sendMessage = (details) => {
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_SERVICE_ID,
+				process.env.REACT_APP_TEMPLATE_ID,
+				details,
+				process.env.REACT_APP_USER_ID
+			)
+			.then(
+				(res) => {
+					alert('Wiadomość wysłana! Wkrótce się do Ciebie odezwiemy!');
+				},
+				(err) => {
+					alert('Wystąpił błąd! Spróbuj ponownie wysłać wiadomość!');
+				}
+			);
+	};
+
 	return (
 		<div className="contact-section" id="contact">
 			<div className="contact-section-container">
@@ -48,7 +67,7 @@ const ContactSection = () => {
 					</div>
 				</div>
 				<div className="contact-section-wrapper">
-					<ContactForm />
+					<ContactForm sendMessage={sendMessage} />
 				</div>
 			</div>
 		</div>
