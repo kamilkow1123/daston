@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
 	return (
@@ -11,7 +12,9 @@ const Portfolio = () => {
 				</div>
 				<div className="portfolio-card">
 					<h2>BUDYNKI</h2>
-					<div className="portfolio-card-button">otwórz</div>
+					<Link className="portfolio-card-button" to="/buildings">
+						otwórz
+					</Link>
 				</div>
 				<div className="portfolio-card">
 					<h2>WNĘTRZA</h2>
