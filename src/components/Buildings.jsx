@@ -13,6 +13,7 @@ const Buildings = () => {
 		<div>
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
+			<h1>Buildings</h1>
 		</div>
 	);
 };
