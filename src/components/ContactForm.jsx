@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 const ContactForm = ({ sendMessage }) => {
 	const [ details, setDetails ] = useState({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+    // const [errors, setErrors] = useState({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+    const [error, setError] = useState('');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -10,12 +12,14 @@ const ContactForm = ({ sendMessage }) => {
             setDetails({ firstname: '', lastname: '', email: '', phone: '', message: '' });
         }
         else{
-            alert("Żadne pole nie może być puste");
+            // alert("Żadne pole nie może być puste");
+            setError("Żadne pole nie może być puste");
         }
 	};
 
 	return (
 		<form className="contact-section-form" onSubmit={handleSubmit}>
+            {error && <p className="contact-section-form-error">{error}</p>}
 			<div className="contact-section-form-wrapper">
 				<div className="contact-section-form-group">
 					<label htmlFor="firstname">Imię</label>
