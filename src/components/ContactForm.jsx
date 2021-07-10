@@ -10,10 +10,11 @@ const ContactForm = ({ sendMessage }) => {
         if(details.firstname !== '' && details.lastname !== '' && details.email !== '' && details.phone !== '' && details.message !== ''){
             sendMessage(e.target);
             setDetails({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+            setError('');
         }
         else{
             // alert("Żadne pole nie może być puste");
-            setError("Żadne pole nie może być puste");
+            setError("Żadne pole nie może być puste!");
         }
 	};
 
