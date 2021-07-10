@@ -5,8 +5,13 @@ const ContactForm = ({ sendMessage }) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		sendMessage(e.target);
-		setDetails({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+        if(details.firstname !== '' && details.lastname !== '' && details.email !== '' && details.phone !== '' && details.message !== ''){
+            sendMessage(e.target);
+            setDetails({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+        }
+        else{
+            alert("Żadne pole nie może być puste");
+        }
 	};
 
 	return (
