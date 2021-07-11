@@ -37,16 +37,16 @@
   visibility: hidden;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
-  //   transform: translateY(-110%);
+  transform: translateY(-110%);
   //   transform: scale(0);
-  opacity: 0;
+  //   opacity: 0;
   z-index: 999;
 
   &.open {
     visibility: visible;
-    // transform: translateY(0%);
+    transform: translateY(0%);
     // transform: scale(1);
-    opacity: 1;
+    // opacity: 1;
   }
 
   img {
