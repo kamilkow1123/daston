@@ -299,6 +299,16 @@
   margin: 1.5rem;
 }
 
+.portfolio-page-header {
+  margin: 1.5rem;
+  margin-top: 80px;
+  font-size: 2.5rem;
+  color: #303131;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+  text-align: center;
+}
+
 .portfolio-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,6 +891,36 @@
 .footer-social-link {
   font-size: 1.5rem;
   color: #303131;
+}
+
+.gallery {
+  -webkit-column-count: 1;
+          column-count: 1;
+  -webkit-column-width: 100%;
+          column-width: 100%;
+  padding: 0 20px;
+}
+
+@media (min-width: 1000px) {
+  .gallery {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+.gallery-img {
+  margin-bottom: 12px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  opacity: 0.5;
+}
+
+.gallery-img img {
+  width: 100%;
 }
 
 * {

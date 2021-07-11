@@ -17,7 +17,7 @@ const Home = () => {
 	return (
 		<div className="home-container" id="home-container">
 			<Sidebar isOpen={isOpen} toggle={toggle} />
-			<Navbar toggle={toggle} />
+			<Navbar toggle={toggle} visibleMenu={true} alwaysSolid={false}/>
 			<HeroSection />
 			<Portfolio />
 			<InfoSection />

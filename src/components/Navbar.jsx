@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { Link as LinkS, animateScroll as scroll } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, visibleMenu, alwaysSolid }) => {
 	const [ solidNav, setSolidNav ] = useState(false);
 
 	const changeNav = () => {
@@ -25,17 +25,17 @@ const Navbar = ({ toggle }) => {
 	};
 
 	return (
-		<nav className="nav" style={{ background: `${solidNav ? '#fff' : 'transparent'}` }}>
+		<nav className="nav" style={{ background: `${solidNav || alwaysSolid ? '#fff' : 'transparent'}` }}>
 			<div className="nav-container">
 				<LinkR
 					to="/"
 					className="logo"
 					onClick={toggleHome}
-					style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+					style={{ color: `${solidNav || alwaysSolid? '#303131' : '#fff'}` }}
 				>
 					DASTON
 				</LinkR>
-				<ul className="nav-menu">
+				<ul className="nav-menu" style={{visibility: `${visibleMenu ? 'visible' : 'hidden'}`}}>
 					<li className="nav-item">
 						<LinkS
 							to="portfolio"
@@ -45,7 +45,7 @@ const Navbar = ({ toggle }) => {
 							exact="true"
 							offset={-80}
 							className="nav-link"
-							style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+							style={{ color: `${solidNav || alwaysSolid ? '#303131' : '#fff'}` }}
 						>
 							Portfolio
 						</LinkS>
@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
 							exact="true"
 							offset={-80}
 							className="nav-link"
-							style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+							style={{ color: `${solidNav || alwaysSolid? '#303131' : '#fff'}` }}
 						>
 							Firma
 						</LinkS>
@@ -73,13 +73,13 @@ const Navbar = ({ toggle }) => {
 							exact="true"
 							offset={-80}
 							className="nav-link"
-							style={{ color: `${solidNav ? '#303131' : '#fff'}` }}
+							style={{ color: `${solidNav || alwaysSolid? '#303131' : '#fff'}` }}
 						>
 							Kontakt
 						</LinkS>
 					</li>
 				</ul>
-				<div className="mobile-icon" onClick={toggle} style={{ color: `${solidNav ? '#303131' : '#fff'}` }}>
+				<div className="mobile-icon" onClick={toggle} style={{ color: `${solidNav || alwaysSolid? '#303131' : '#fff'}`,visibility: `${visibleMenu ? '' : 'hidden'}`}}>
 					<FaBars />
 				</div>
 			</div>

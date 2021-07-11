@@ -1,0 +1,25 @@
+@import 'media-queries';
+
+.gallery {
+  column-count: 1;
+  column-width: 100%;
+  padding: 0 20px;
+
+  @include desktop {
+    column-count: 2;
+  }
+
+  &-img {
+    margin-bottom: 12px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

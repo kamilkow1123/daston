@@ -1,21 +1,16 @@
-import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
+import Gallery from "./Gallery";
+import { BuildingsData } from "./BuildingsData";
 
 const Buildings = () => {
-	const [ isOpen, setIsOpen ] = useState(false);
-
-	const toggle = () => {
-		setIsOpen(!isOpen);
-	};
-
-	return (
-		<div>
-			<Sidebar isOpen={isOpen} toggle={toggle} />
-			<Navbar toggle={toggle} />
-			<h1>Buildings</h1>
-		</div>
-	);
+  return (
+    <div>
+      <Navbar visibleMenu={false} alwaysSolid={true} />
+      <h1 className="portfolio-page-header">Budynki</h1>
+      <Gallery photos={BuildingsData} />
+    </div>
+  );
 };
 
 export default Buildings;

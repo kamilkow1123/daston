@@ -12,7 +12,7 @@ const Portfolio = () => {
 				</div>
 				<div className="portfolio-card">
 					<h2>BUDYNKI</h2>
-					<Link className="portfolio-card-button" to="/buildings">
+					<Link className="portfolio-card-button" to="/budynki">
 						otwórz
 					</Link>
 				</div>

@@ -6,92 +6,107 @@ $image-mask: rgba(0, 0, 0, 0.3);
 $navbar-height: 80px;
 
 .portfolio {
-	height: calc(100vh - #{$navbar-height}); //80px - height of the navbar
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	scroll-snap-align: start;
+  height: calc(100vh - #{$navbar-height}); //80px - height of the navbar
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: start;
 
-	h1 {
-		font-size: 2.5rem;
-		color: $dark;
-		font-family: $accent-font;
-		font-weight: 200;
-		margin: 1.5rem;
-	}
+  h1 {
+    font-size: 2.5rem;
+    color: $dark;
+    font-family: $accent-font;
+    font-weight: 200;
+    margin: 1.5rem;
+  }
 
-	&-wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 0 20px;
-		width: 100%;
-		height: 100%;
+  &-page {
+    &-header {
+      margin: 1.5rem;
+      margin-top: 80px;
+      font-size: 2.5rem;
+      color: $dark;
+      font-family: $accent-font;
+      font-weight: 200;
+      text-align: center;
+    }
+  }
 
-		@include desktop {
-			flex-direction: row;
-		}
-	}
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
 
-	&-card {
-		background-color: $grey;
-		background-image: linear-gradient($image-mask, $image-mask), url(../img/building6.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 30px;
-		height: 100%;
-		width: 100%;
-		margin-bottom: 10px;
+    @include desktop {
+      flex-direction: row;
+    }
+  }
 
-		@include tablet {
-			// max-width: 80%;
-		}
+  &-card {
+    background-color: $grey;
+    background-image: linear-gradient($image-mask, $image-mask),
+      url(../img/building6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
 
-		@include desktop {
-			margin: 0 10px;
-			height: 100%;
-			justify-content: flex-start;
-		}
+    @include tablet {
+      // max-width: 80%;
+    }
 
-		h2 {
-			color: $light;
-			font-family: $accent-font;
-			font-weight: 200;
-			margin-bottom: 1rem;
-			font-size: 2rem;
+    @include desktop {
+      margin: 0 10px;
+      height: 100%;
+      justify-content: flex-start;
+    }
 
-			@include desktop {
-				font-size: 2.5rem;
-				margin: 7rem 0 1rem 0;
-			}
-		}
+    h2 {
+      color: $light;
+      font-family: $accent-font;
+      font-weight: 200;
+      margin-bottom: 1rem;
+      font-size: 2rem;
 
-		&-button {
-			color: $light;
-			border: 1px solid $light;
-			padding: 0.5rem 1rem;
-			cursor: pointer;
-			transition: all 0.4s ease-in-out;
-			text-decoration: none;
+      @include desktop {
+        font-size: 2.5rem;
+        margin: 7rem 0 1rem 0;
+      }
+    }
 
-			&:hover {
-				color: $dark;
-				background-color: $light;
-			}
-		}
-	}
+    &-button {
+      color: $light;
+      border: 1px solid $light;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      text-decoration: none;
 
-	&-card:first-child {
-		background-image: linear-gradient($image-mask, $image-mask), url(../img/projection1.jpg);
-	}
+      &:hover {
+        color: $dark;
+        background-color: $light;
+      }
+    }
+  }
 
-	&-card:last-child {
-		background-image: linear-gradient($image-mask, $image-mask), url(../img/interior2.jpg);
-	}
+  &-card:first-child {
+    background-image: linear-gradient($image-mask, $image-mask),
+      url(../img/projection1.jpg);
+  }
+
+  &-card:last-child {
+    background-image: linear-gradient($image-mask, $image-mask),
+      url(../img/interior2.jpg);
+  }
 }

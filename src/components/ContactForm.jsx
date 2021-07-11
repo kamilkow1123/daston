@@ -14,7 +14,7 @@ const ContactForm = ({ sendMessage }) => {
         }
         else{
             // alert("Żadne pole nie może być puste");
-            setError("Żadne pole nie może być puste!");
+            setError("Wszystkie pola są obowiązkowe");
         }
 	};
 
