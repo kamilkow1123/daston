@@ -49,7 +49,7 @@ const Gallery = ({ photos }) => {
               key={index}
               onClick={() => getImage(index)}
             >
-              <img src={photo.imgSrc} alt={photo.alt} key={index} />
+              <img src={photo.imgMin} alt={photo.alt} key={index} />
             </div>
           );
         })}
