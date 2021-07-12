@@ -992,6 +992,18 @@
   z-index: 1000;
 }
 
+.slide {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.slide.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
