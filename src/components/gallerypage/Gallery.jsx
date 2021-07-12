@@ -3,13 +3,11 @@ import { FaTimes, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Gallery = ({ photos }) => {
   const [ lightbox, setLightbox ] = useState(false);
-  //   const [ tempImgSrc, setTempImgSrc ] = useState("");
   const [ currentImage, setCurrentImage ] = useState(0);
   const length = photos.length;
 
-  const getImage = (imgSrc, index) => {
+  const getImage = index => {
     setCurrentImage(index);
-    // setTempImgSrc(imgSrc);
     setLightbox(true);
   };
 
@@ -49,7 +47,7 @@ const Gallery = ({ photos }) => {
             <div
               className="gallery-img"
               key={index}
-              onClick={() => getImage(photo.imgSrc, index)}
+              onClick={() => getImage(index)}
             >
               <img src={photo.imgSrc} alt={photo.alt} key={index} />
             </div>

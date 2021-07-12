@@ -963,6 +963,12 @@
   padding: 3.5rem 20px;
 }
 
+@media (min-width: 1000px) {
+  .lightbox img {
+    padding: 3.5rem 7vw;
+  }
+}
+
 .close-icon {
   color: #fff;
   position: absolute;
@@ -970,6 +976,7 @@
   right: 1rem;
   font-size: 2rem;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .left-arrow {
