@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../navigation/Navbar";
 import Gallery from "./Gallery";
-import Footer from "./Footer";
+import Footer from "../navigation/Footer";
 import { BuildingsData } from "./BuildingsData";
 
 const Buildings = () => {

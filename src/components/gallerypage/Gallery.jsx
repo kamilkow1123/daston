@@ -12,7 +12,7 @@ const Gallery = ({ photos }) => {
   return (
     <div>
       <div className={lightbox ? "lightbox open" : "lightbox"}>
-        <img src={tempImgSrc} />
+        <img src={tempImgSrc} alt="lightbox" />
         <div className="close-icon" onClick={() => setLightbox(false)}>
           <FaTimes />
         </div>

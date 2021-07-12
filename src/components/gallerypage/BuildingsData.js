@@ -1,13 +1,13 @@
-import BuildingImg1 from "../img/building1.jpg";
-import BuildingImg2 from "../img/building2.jpg";
-import BuildingImg3 from "../img/building3.jpg";
-import BuildingImg4 from "../img/building4.jpg";
-import BuildingImg5 from "../img/building5.jpg";
-import BuildingImg6 from "../img/building6.jpg";
-import BuildingImg7 from "../img/building7.jpg";
-import BuildingImg8 from "../img/building8.jpg";
-import BuildingImg9 from "../img/building9.jpg";
-import BuildingImg10 from "../img/building10.jpg";
+import BuildingImg1 from "../../img/building1.jpg";
+import BuildingImg2 from "../../img/building2.jpg";
+import BuildingImg3 from "../../img/building3.jpg";
+import BuildingImg4 from "../../img/building4.jpg";
+import BuildingImg5 from "../../img/building5.jpg";
+import BuildingImg6 from "../../img/building6.jpg";
+import BuildingImg7 from "../../img/building7.jpg";
+import BuildingImg8 from "../../img/building8.jpg";
+import BuildingImg9 from "../../img/building9.jpg";
+import BuildingImg10 from "../../img/building10.jpg";
 
 export const BuildingsData = [
   {
