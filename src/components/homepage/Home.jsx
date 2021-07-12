@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import InfoSection from "./InfoSection";
 import ContactSection from "./contact/ContactSection";
 import Footer from "../navigation/Footer";
+// import ScrollToTop from "../navigation/ScrollToTop";
 
 const Home = () => {
   const [ isOpen, setIsOpen ] = useState(false);
