@@ -21,14 +21,43 @@ $navbar-height: 80px;
   }
 
   &-page {
+    margin: 1.5rem auto;
+    margin-top: 80px;
+    max-width: 1150px;
+    // max-width: 1175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    &-button {
+      color: $dark;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+
+      &-icon {
+        margin-right: 10px;
+      }
+    }
+
     &-header {
-      margin: 1.5rem;
-      margin-top: 80px;
       font-size: 2.5rem;
       color: $dark;
       font-family: $accent-font;
       font-weight: 200;
       text-align: center;
+    }
+
+    &-placeholder {
+      width: 170px;
     }
   }
 

@@ -299,14 +299,62 @@
   margin: 1.5rem;
 }
 
-.portfolio-page-header {
-  margin: 1.5rem;
+.portfolio-page {
+  margin: 1.5rem auto;
   margin-top: 80px;
+  max-width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.portfolio-page-button {
+  color: #303131;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.portfolio-page-button-icon {
+  margin-right: 10px;
+}
+
+.portfolio-page-header {
   font-size: 2.5rem;
   color: #303131;
   font-family: "Cinzel", serif;
   font-weight: 200;
   text-align: center;
+}
+
+.portfolio-page-placeholder {
+  width: 170px;
 }
 
 .portfolio-wrapper {
