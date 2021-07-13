@@ -18,8 +18,8 @@ $image-mask: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
   transition: all 0.4s ease-in-out;
+  //   scroll-snap-align: start;
 
   &-container {
     display: flex;

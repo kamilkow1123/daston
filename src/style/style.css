@@ -291,7 +291,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  scroll-snap-align: start;
 }
 
 .portfolio h1 {
@@ -474,7 +473,7 @@
 }
 
 .info-section {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,20 +481,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  scroll-snap-align: start;
   margin-top: 1rem;
-}
-
-@media (min-width: 1000px) {
-  .info-section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
 }
 
 .info-section-content {
@@ -557,6 +549,9 @@
 }
 
 .info-section-image {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background-color: #8b98a7;
   background-image: url(../img/structure4.jpg);
   background-position: center;
@@ -594,7 +589,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  scroll-snap-align: start;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }

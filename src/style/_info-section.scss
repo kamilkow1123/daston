@@ -5,16 +5,13 @@
 $navbar-height: 80px;
 
 .info-section {
-  height: calc(100vh - #{$navbar-height});
+  min-height: calc(100vh - #{$navbar-height});
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
   align-items: center;
-  scroll-snap-align: start;
   margin-top: 1rem;
-
-  @include desktop {
-    flex-direction: row-reverse;
-  }
+  //   scroll-snap-align: start;
 
   &-content {
     display: flex;
@@ -63,6 +60,7 @@ $navbar-height: 80px;
   }
 
   &-image {
+    flex-grow: 1;
     background-color: $grey;
     background-image: url(../img/structure4.jpg);
     background-position: center;
