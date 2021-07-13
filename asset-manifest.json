@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/daston/static/css/main.b317c59f.chunk.css",
+    "main.css": "/daston/static/css/main.95854617.chunk.css",
     "main.js": "/daston/static/js/main.a1409753.chunk.js",
     "main.js.map": "/daston/static/js/main.a1409753.chunk.js.map",
     "runtime-main.js": "/daston/static/js/runtime-main.a04ad2d2.js",
@@ -8,7 +8,7 @@
     "static/js/2.c4da0ad9.chunk.js": "/daston/static/js/2.c4da0ad9.chunk.js",
     "static/js/2.c4da0ad9.chunk.js.map": "/daston/static/js/2.c4da0ad9.chunk.js.map",
     "index.html": "/daston/index.html",
-    "static/css/main.b317c59f.chunk.css.map": "/daston/static/css/main.b317c59f.chunk.css.map",
+    "static/css/main.95854617.chunk.css.map": "/daston/static/css/main.95854617.chunk.css.map",
     "static/js/2.c4da0ad9.chunk.js.LICENSE.txt": "/daston/static/js/2.c4da0ad9.chunk.js.LICENSE.txt",
     "static/media/bathroom1.fbde765a.jpg": "/daston/static/media/bathroom1.fbde765a.jpg",
     "static/media/bathroom1min.584098ad.jpg": "/daston/static/media/bathroom1min.584098ad.jpg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.a04ad2d2.js",
     "static/js/2.c4da0ad9.chunk.js",
-    "static/css/main.b317c59f.chunk.css",
+    "static/css/main.95854617.chunk.css",
     "static/js/main.a1409753.chunk.js"
   ]
 }
