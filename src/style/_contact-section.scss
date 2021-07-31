@@ -6,224 +6,225 @@ $navbar-height: 80px;
 $image-mask: rgba(0, 0, 0, 0.3);
 
 .contact-section {
-  min-height: calc(100vh - #{$navbar-height});
-  width: 100%;
-  margin-top: 1rem;
-  background-color: $grey;
-  background-image: linear-gradient($image-mask, $image-mask),
-    url(../img/building10.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease-in-out;
-  //   scroll-snap-align: start;
-
-  &-container {
+    min-height: calc(100vh - #{$navbar-height});
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $grey;
+    background-image: linear-gradient($image-mask, $image-mask),
+        url(../img/building10.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
-
-    // background-color: rgba(255, 255, 255, 0.9);
-    margin: 20px;
-    max-width: 600px;
-    width: 100%;
-
-    @include desktop {
-      flex-direction: row;
-      align-items: stretch;
-      max-width: 1000px;
-    }
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    // background-color: $light;
-    background-color: rgba(255, 255, 255, 0.9);
-    // margin: 20px;
+    transition: all 0.4s ease-in-out;
+    //   scroll-snap-align: start;
 
-    @include desktop {
-      padding: 50px 80px;
-      align-items: flex-start;
-      max-width: 450px;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+
+        // background-color: rgba(255, 255, 255, 0.9);
+        margin: 20px;
+        max-width: 600px;
+        width: 100%;
+
+        @include desktop {
+            flex-direction: row;
+            align-items: stretch;
+            max-width: 1000px;
+        }
     }
 
-    h1 {
-      font-size: 2.5rem;
-      color: $dark;
-      font-family: $accent-font;
-      font-weight: 200;
-      margin: 0;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        background-color: $light;
+        // background-color: rgba(255, 255, 255, 0.9);
+        // margin: 20px;
 
-      @include desktop {
-        margin: 1rem 0;
-      }
-    }
+        @include desktop {
+            padding: 50px 80px;
+            align-items: flex-start;
+            max-width: 450px;
+        }
 
-    p {
-      color: $dark;
-      text-align: center;
-      line-height: 2rem;
-      margin: 0.5rem 0;
+        h1 {
+            font-size: 2.5rem;
+            color: $dark;
+            font-family: $accent-font;
+            font-weight: 200;
+            margin: 0;
 
-      @include desktop {
-        margin: 0.5rem 0 1rem 0;
-        text-align: left;
-      }
-    }
+            @include desktop {
+                margin: 1rem 0;
+            }
+        }
 
-    .icon-text {
-      color: $dark;
-      font-size: 1.2rem;
-      padding: 0.5rem 0;
-      text-align: center;
+        p {
+            color: $dark;
+            text-align: center;
+            line-height: 2rem;
+            margin: 0.5rem 0;
 
-      span {
-        margin-left: 20px;
-      }
-    }
+            @include desktop {
+                margin: 0.5rem 0 1rem 0;
+                text-align: left;
+            }
+        }
 
-    .contact-social {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 150px;
-      padding: 0.5rem 0;
-      margin-top: 0.5rem;
+        .icon-text {
+            color: $dark;
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+            text-align: center;
 
-      &-link {
-        font-size: 1.5rem;
-        color: $dark;
-      }
+            span {
+                margin-left: 20px;
+            }
+        }
 
-      @include desktop {
-        margin-top: 2rem;
-      }
-    }
-  }
+        .contact-social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 150px;
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
 
-  &-wrapper {
-    width: 100%;
-    backdrop-filter: blur(25px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+            &-link {
+                font-size: 1.5rem;
+                color: $dark;
+            }
 
-    @include desktop {
-      padding: 100px 80px;
-    }
-  }
-
-  &-form {
-    width: 100%;
-    height: 100%;
-
-    &-error {
-      color: rgb(250, 54, 54);
-      text-align: center;
-    }
-
-    .button-wrapper {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .submit-button {
-      display: inline-block;
-      padding: 10px 15px;
-      background: transparent;
-      text-decoration: none;
-      border: 1px solid $light;
-      color: $light;
-      align-self: stretch;
-      cursor: pointer;
-      margin: 0.5rem 0;
-      transition: all 0.4s ease-in-out;
-      font-size: 1rem;
-
-      &:hover {
-        background: $light;
-        color: $dark;
-      }
+            @include desktop {
+                margin-top: 2rem;
+            }
+        }
     }
 
     &-wrapper {
-      display: flex;
-      flex-direction: column;
-
-      @include desktop {
-        flex-direction: row;
-        gap: 2rem;
-      }
-    }
-
-    &-group {
-      padding: 5px;
-
-      @include desktop {
-        margin: 1rem 0;
-      }
-
-      &:focus-within label {
-        color: $light;
-      }
-
-      label {
-        display: block;
-        color: rgba(255, 255, 255, 0.6);
-        margin-bottom: 5px;
-        transition: all 0.4s ease-in-out;
-      }
-
-      input,
-      textarea {
-        border: none;
-        padding: 10px;
-        padding-left: 0;
         width: 100%;
-        // background: rgba(255, 255, 255, 0.2);
-        background: transparent;
-        color: $light;
-        transition: all 0.4s ease-in-out;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-        font-family: $primary-font;
+        backdrop-filter: blur(25px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
 
-        &:focus-within {
-          border: none;
-          outline: none;
-          border-bottom: 2px solid $light;
+        @include desktop {
+            padding: 100px 80px;
         }
-
-        &:-webkit-autofill,
-        &:-webkit-autofill:hover,
-        &:-webkit-autofill:focus,
-        &:-webkit-autofill:active {
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: $light !important;
-          transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
-          -webkit-transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
-          font-family: $primary-font;
-          -webkit-font-family: $primary-font;
-        }
-      }
-
-      textarea {
-        resize: none;
-        overflow: auto;
-      }
     }
-  }
+
+    &-form {
+        width: 100%;
+        height: 100%;
+
+        &-error {
+            color: rgb(250, 54, 54);
+            text-align: center;
+        }
+
+        .button-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .submit-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: transparent;
+            text-decoration: none;
+            border: 1px solid $light;
+            color: $light;
+            align-self: stretch;
+            cursor: pointer;
+            margin: 0.5rem 0;
+            transition: all 0.4s ease-in-out;
+            font-size: 1rem;
+
+            &:hover {
+                background: $light;
+                color: $dark;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            @include desktop {
+                flex-direction: row;
+                gap: 2rem;
+            }
+        }
+
+        &-group {
+            padding: 5px;
+
+            @include desktop {
+                margin: 1rem 0;
+            }
+
+            &:focus-within label {
+                color: $light;
+            }
+
+            label {
+                display: block;
+                color: rgba(255, 255, 255, 0.6);
+                margin-bottom: 5px;
+                transition: all 0.4s ease-in-out;
+            }
+
+            input,
+            textarea {
+                border: none;
+                padding: 10px;
+                padding-left: 0;
+                width: 100%;
+                // background: rgba(255, 255, 255, 0.2);
+                background: transparent;
+                color: $light;
+                transition: all 0.4s ease-in-out;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+                font-family: $primary-font;
+
+                &:focus-within {
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid $light;
+                }
+
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover,
+                &:-webkit-autofill:focus,
+                &:-webkit-autofill:active {
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: $light !important;
+                    transition: all 0s 50000s, border-bottom 0.4s ease-in-out;
+                    -webkit-transition: all 0s 50000s,
+                        border-bottom 0.4s ease-in-out;
+                    font-family: $primary-font;
+                    -webkit-font-family: $primary-font;
+                }
+            }
+
+            textarea {
+                resize: none;
+                overflow: auto;
+            }
+        }
+    }
 }

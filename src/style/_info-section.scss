@@ -5,71 +5,95 @@
 $navbar-height: 80px;
 
 .info-section {
-  min-height: calc(100vh - #{$navbar-height});
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-  margin-top: 1rem;
-  //   scroll-snap-align: start;
-
-  &-content {
+    min-height: calc(100vh - #{$navbar-height});
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
-    padding: 0 20px;
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: 20px;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 1rem;
+    //   scroll-snap-align: start;
 
-    @include desktop {
-      padding: 50px 100px;
-      // height: 90%;
+    &-container {
+        margin: 20px;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: column-reverse;
+        // justify-content: center;
+        // align-items: center;
+
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
-    h1 {
-      font-size: 2.5rem;
-      color: $dark;
-      font-family: $accent-font;
-      font-weight: 200;
-      margin: 1.5rem;
+    &-wrapper {
+        display: flex;
+        // width: auto;
+        // height: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
-    p {
-      color: $dark;
-      text-align: center;
-      line-height: 2rem;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        max-width: 600px;
+        // background-color: rgba(255, 255, 255, 0.9);
+        background-color: $light;
+
+        @include desktop {
+            padding: 50px 100px;
+            // height: 90%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: $dark;
+            font-family: $accent-font;
+            font-weight: 200;
+            margin: 1.5rem;
+            text-align: center;
+        }
+
+        p {
+            color: $dark;
+            text-align: center;
+            line-height: 2rem;
+        }
+
+        &-button {
+            color: $dark;
+            border: 1px solid $dark;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            margin: 2rem;
+            text-align: center;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: $dark;
+                color: $light;
+            }
+        }
     }
 
-    &-button {
-      color: $dark;
-      border: 1px solid $dark;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      margin: 2rem;
-      text-align: center;
-      transition: all 0.4s ease-in-out;
-
-      &:hover {
-        background-color: $dark;
-        color: $light;
-      }
+    &-image {
+        flex-grow: 1;
+        background-color: $grey;
+        background-image: url(../img/structure4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-  }
-
-  &-image {
-    flex-grow: 1;
-    background-color: $grey;
-    background-image: url(../img/structure4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
