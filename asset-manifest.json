@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/daston/static/css/main.95854617.chunk.css",
-    "main.js": "/daston/static/js/main.8fd9b11e.chunk.js",
-    "main.js.map": "/daston/static/js/main.8fd9b11e.chunk.js.map",
+    "main.css": "/daston/static/css/main.dcc56e0d.chunk.css",
+    "main.js": "/daston/static/js/main.a90b5311.chunk.js",
+    "main.js.map": "/daston/static/js/main.a90b5311.chunk.js.map",
     "runtime-main.js": "/daston/static/js/runtime-main.a04ad2d2.js",
     "runtime-main.js.map": "/daston/static/js/runtime-main.a04ad2d2.js.map",
     "static/js/2.c4da0ad9.chunk.js": "/daston/static/js/2.c4da0ad9.chunk.js",
     "static/js/2.c4da0ad9.chunk.js.map": "/daston/static/js/2.c4da0ad9.chunk.js.map",
     "index.html": "/daston/index.html",
-    "static/css/main.95854617.chunk.css.map": "/daston/static/css/main.95854617.chunk.css.map",
+    "static/css/main.dcc56e0d.chunk.css.map": "/daston/static/css/main.dcc56e0d.chunk.css.map",
     "static/js/2.c4da0ad9.chunk.js.LICENSE.txt": "/daston/static/js/2.c4da0ad9.chunk.js.LICENSE.txt",
     "static/media/bathroom1.fbde765a.jpg": "/daston/static/media/bathroom1.fbde765a.jpg",
     "static/media/bathroom1min.584098ad.jpg": "/daston/static/media/bathroom1min.584098ad.jpg",
@@ -51,12 +51,13 @@
     "static/media/building9min.4b43ec46.jpg": "/daston/static/media/building9min.4b43ec46.jpg",
     "static/media/interior1min.0db15325.jpg": "/daston/static/media/interior1min.0db15325.jpg",
     "static/media/interior2min.447afa8d.jpg": "/daston/static/media/interior2min.447afa8d.jpg",
+    "static/media/profile.883b4ba2.png": "/daston/static/media/profile.883b4ba2.png",
     "static/media/projection1min.5ea33cd0.jpg": "/daston/static/media/projection1min.5ea33cd0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a04ad2d2.js",
     "static/js/2.c4da0ad9.chunk.js",
-    "static/css/main.95854617.chunk.css",
-    "static/js/main.8fd9b11e.chunk.js"
+    "static/css/main.dcc56e0d.chunk.css",
+    "static/js/main.a90b5311.chunk.js"
   ]
 }
